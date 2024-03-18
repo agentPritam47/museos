@@ -19,6 +19,36 @@ body {
   font-family: "just1";
   src: url("./untitled-serif-regular.woff2") format("woff2");
 }
+
+
+.arrowA{
+  /* background-color: red; */
+  overflow: hidden;
+  margin-top: 3vw;
+  height: 7vw;
+  width: 100vw;
+
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+}
+.arrow{
+  position: relative;
+  /* left: 49%;
+  transform: translateX(-50%);
+  transform: translateY(-50%); */
+  margin-top: 10vw;
+  animation: move 3s infinite ease-in-out;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-40px);
+}
+  
+}
 #cursor{
   height: 1vw;
   pointer-events: none;
@@ -310,7 +340,8 @@ body {
   height: 3vw;
   width: 3vw;
   position: relative;
-  left: 51%;
+  z-index: 10;
+  left: 50.5%;
   transform: translateX(-50%);
 }
 #page3-line4A{
@@ -541,6 +572,51 @@ body {
     object-fit: cover;
   }
 }
+#page5-after{
+  /* height: 100vh; */
+  width: 100%;
+  padding: 2vw;
+  padding-bottom: 20vw;
+  h2{
+    font-size: 2vw;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 6vw;
+  }
+}
+#page5-after-part1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vw;
+}
+#image1{
+  height: 55vh;
+  width: 47vw;
+  background-color: red;
+  position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+#imgsvg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#image2{
+  height: 55vh;
+  width: 47vw;
+  background-color: red;
+  position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 #page6 {
   /* height: 100vh; */
   width: 100%;
@@ -623,6 +699,7 @@ body {
   /* height: 100vh; */
   width: 100%;
   color: #fff;
+  padding-bottom: 10vw;
   h2 {
     text-align: center;
     font-size: 3vw;
@@ -647,15 +724,20 @@ body {
 
 #footer {
   padding-bottom: 8vw;
+  width: 100%;
+  /* height: 100vh; */
   margin-top: 7vw;
   display: flex;
   justify-content: space-between;
   p {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
   }
   i {
     font-size: 1.3vw;
   }
+}
+#footer-part1{
+  width: 12%;
 }
 #footer-part3 {
   display: flex;
@@ -670,6 +752,12 @@ body {
 }
 
 @media (max-width: 600px) {
+  #loader{
+    padding: 4vw;
+    h1{
+      font-size: 20vw;
+    }
+  }
   #cursor{
     display: none;
   }
@@ -873,7 +961,7 @@ body {
     height: 18vh;
     width: 100vw;
     position: absolute;
-    left: -100%;
+    left: -200%;
     top: 0;
     background-color: #fff;
     z-index: -1;
@@ -907,6 +995,27 @@ body {
 
 
 
+  .arrowA{
+    overflow: hidden;
+    margin-top: 30vw;
+    height: 25vw;
+    width: 100vw;
+  
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+  }
+  .arrow{
+    position: relative;
+    /* left: 49%;
+    transform: translateX(-50%);
+    transform: translateY(-50%); */
+    margin-top: 10vw;
+    animation: move 3s infinite ease-in-out;
+  }
+  
 
   #page3-line1{
     height: 1px;
@@ -1194,6 +1303,91 @@ body {
       object-fit: cover;
     }
   }
+
+
+#image1{
+  height: 55vh;
+  width: 47vw;
+  background-color: red;
+  position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+#imgsvg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#image2{
+  height: 55vh;
+  width: 47vw;
+  background-color: red;
+  position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+#page5-after{
+  padding: 4vw;
+  h2{
+    margin-top: 40vw;
+    padding-bottom: 20vw;
+    font-size: 3.5vw;
+  }
+}
+
+#page5-after-part1{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10vw;
+  margin-top: 4vw;
+}
+#image1{
+  height: 30vh;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+#imgsvg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#image2{
+  height: 30vh;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+
+
+
+
+
+
+
   #page6 {
     /* height: 100vh; */
     width: 100%;
@@ -1328,6 +1522,12 @@ body {
     span{
         display: none;
     }
+  }
+  #footer-part1{
+    width: 25%;
+  }
+  #footer-part2 {
+    width: 25%;
   }
   #footer-part3 {
     display: flex;
